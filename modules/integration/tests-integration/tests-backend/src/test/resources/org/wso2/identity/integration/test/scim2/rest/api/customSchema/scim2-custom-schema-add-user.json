@@ -1,0 +1,15 @@
+{
+  "schemas": [],
+  "name": {
+    "firstName": "Kim",
+    "lastName": "Berry"
+  },
+  "userName": "userkim",
+  "password": "Wso2@test123",
+  "urn:scim:schemas:extension:custom:User": {
+    "country": "France",
+    "manager": {
+      "email": "piraveena@gmail.com"
+    }
+  }
+}

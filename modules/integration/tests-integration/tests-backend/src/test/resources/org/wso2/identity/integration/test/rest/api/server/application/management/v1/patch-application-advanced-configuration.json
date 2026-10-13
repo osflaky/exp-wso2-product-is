@@ -1,0 +1,16 @@
+{
+  "advancedConfigurations": {
+    "saas": false,
+    "discoverableByEndUsers": true,
+    "skipLoginConsent": true,
+    "skipLogoutConsent": true,
+    "returnAuthenticatedIdpList": true,
+    "enableAuthorization": true,
+    "trustedAppConfiguration": {
+      "isFIDOTrustedApp": true,
+      "androidPackageName": "sample.package.name",
+      "androidThumbprints": ["sampleThumbprint"],
+      "appleAppId": "sample.app.id"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "schemas": [
+        "urn:ietf:params:scim:api:messages:2.0:PatchOp"
+    ],
+    "Operations": [
+        {
+            "op": "replace",
+            "value": {
+                "urn:scim:wso2:schema": {
+                    "verifyEmail": true
+                }
+            }
+        }
+    ]
+}

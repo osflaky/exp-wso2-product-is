@@ -1,0 +1,10 @@
+{
+  "userId": "TestUser02",
+  "password": "Test@123",
+  "properties": [
+    {
+      "key": "key",
+      "value": "value"
+    }
+  ]
+}

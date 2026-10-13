@@ -1,0 +1,63 @@
+[server]
+hostname = "localhost"
+node_ip = "127.0.0.1"
+base_path = "https://$ref{server.hostname}:${carbon.management.port}"
+enable_admin_services = true
+
+[super_admin]
+username = "admin"
+password = "admin"
+create_admin_account = true
+
+[user_store]
+type = "database_unique_id"
+
+[database.identity_db]
+driver = "$env{IDENTITY_DATABASE_DRIVER}"
+url = "$env{IDENTITY_DATABASE_URL}"
+username = "$env{IDENTITY_DATABASE_USERNAME}"
+password = "$env{IDENTITY_DATABASE_PASSWORD}"
+
+[database.shared_db]
+driver = "$env{SHARED_DATABASE_DRIVER}"
+url = "$env{SHARED_DATABASE_URL}"
+username = "$env{SHARED_DATABASE_USERNAME}"
+password = "$env{SHARED_DATABASE_PASSWORD}"
+
+[datasource.AgentIdentity]
+id = "AgentIdentity"
+driver = "$env{AGENTIDENTITY_DATABASE_DRIVER}"
+url = "$env{AGENTIDENTITY_DATABASE_URL}"
+username = "$env{AGENTIDENTITY_DATABASE_USERNAME}"
+password = "$env{AGENTIDENTITY_DATABASE_PASSWORD}"
+
+[keystore.primary]
+file_name = "wso2carbon.p12"
+password = "wso2carbon"
+
+[event.default_listener.governance_identity_mgt]
+enable = false
+
+[event.default_listener.governance_identity_store]
+enable = false
+
+[event.default_listener.application_authentication]
+priority = "12"
+
+[[event_listener]]
+id = "das_login"
+type = "org.wso2.carbon.identity.core.handler.AbstractIdentityMessageHandler"
+name = "org.wso2.carbon.identity.data.publisher.application.authentication.impl.DASLoginDataPublisherImpl"
+order = "10"
+
+[[event_listener]]
+id = "das_session"
+type = "org.wso2.carbon.identity.core.handler.AbstractIdentityMessageHandler"
+name = "org.wso2.carbon.identity.data.publisher.application.authentication.impl.DASSessionDataPublisherImpl"
+order = "11"
+
+[[event_listener]]
+id = "das_publisher"
+type = "org.wso2.carbon.identity.core.handler.AbstractIdentityHandler"
+name = "org.wso2.carbon.identity.data.publisher.oauth.listener.OAuthTokenIssuanceDASDataPublisher"
+order = "13"

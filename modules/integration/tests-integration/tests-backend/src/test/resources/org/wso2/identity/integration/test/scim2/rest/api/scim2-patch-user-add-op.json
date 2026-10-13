@@ -1,0 +1,34 @@
+{
+    "schemas": [
+        "urn:ietf:params:scim:api:messages:2.0:PatchOp"
+    ],
+    "Operations": [
+        {
+            "op": "add",
+            "value": {
+                "emails": [
+                    {
+                        "type": "work",
+                        "value": "kim@wso2.com"
+                    }
+                ]
+            }
+        },
+        {
+            "op": "add",
+            "value": {
+                "urn:scim:wso2:schema": {
+                        "emailAddresses": ["kim@abc.com", "kim@xyz.com"]
+                }
+            }
+        },
+        {
+            "op": "add",
+            "value": {
+                "urn:scim:wso2:schema": {
+                    "mobileNumbers": ["0771234567", "0771234568"]
+                }
+            }
+        }
+    ]
+}

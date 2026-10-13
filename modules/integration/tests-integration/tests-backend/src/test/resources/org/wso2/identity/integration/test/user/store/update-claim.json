@@ -1,0 +1,26 @@
+{
+  "claimURI": "http://wso2.org/claims/streetaddress",
+  "description": "Address updated",
+  "displayOrder": 4,
+  "displayName": "Address updated",
+  "dataType": "string",
+  "multiValued": false,
+  "readOnly": false,
+  "regEx": "",
+  "required": false,
+  "supportedByDefault": false,
+  "sharedProfileValueResolvingMethod": "FromOrigin",
+  "attributeMapping": [
+    {
+      "mappedAttribute": "streetAddress",
+      "userstore": "PRIMARY"
+    }
+  ],
+  "properties": [
+    {
+      "key": "isSystemClaim",
+      "value": "true"
+    }
+  ],
+  "profiles": {}
+}

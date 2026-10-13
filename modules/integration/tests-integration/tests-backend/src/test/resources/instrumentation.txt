@@ -1,0 +1,7 @@
+org.wso2.carbon.idp.mgt*
+org.wso2.carbon.sts*
+org.wso2.carbon.user.core*
+org.wso2.carbon.user.mgt*
+org.wso2.carbon.claim.mgt*
+org.wso2.carbon.identity*
+org.wso2.carbon.xkms.mgt*

@@ -1,0 +1,152 @@
+[
+  {
+    "connector-name": "self-sign-up",
+    "properties": [
+      {
+        "name": "SelfRegistration.Enable",
+        "value": "false"
+      },
+      {
+        "name": "SelfRegistration.LockOnCreation",
+        "value": "true"
+      },
+      {
+        "name": "SelfRegistration.OTP.SendOTPInEmail",
+        "value": "false"
+      },
+      {
+        "name": "SelfRegistration.EmailOTP.Enable",
+        "value": "false"
+      },
+      {
+        "name": "SelfRegistration.OTP.UseUppercaseCharactersInOTP",
+        "value": "true"
+      },
+      {
+        "name": "SelfRegistration.OTP.UseLowercaseCharactersInOTP",
+        "value": "true"
+      },
+      {
+        "name": "SelfRegistration.OTP.UseNumbersInOTP",
+        "value": "true"
+      },
+      {
+        "name": "SelfRegistration.OTP.OTPLength",
+        "value": "6"
+      },
+      {
+        "name": "SelfRegistration.SendConfirmationOnCreation",
+        "value": "false"
+      },
+      {
+        "name": "SelfRegistration.ShowUsernameUnavailability",
+        "value": "true"
+      },
+      {
+        "name": "SelfRegistration.Notification.InternallyManage",
+        "value": "true"
+      },
+      {
+        "name": "SelfRegistration.ReCaptcha",
+        "value": "true"
+      },
+      {
+        "name": "SelfRegistration.VerificationCode.ExpiryTime",
+        "value": "1440"
+      },
+      {
+        "name": "SelfRegistration.VerificationCode.SMSOTP.ExpiryTime",
+        "value": "1"
+      },
+      {
+        "name": "SelfRegistration.SMSOTP.Regex",
+        "value": "[a-zA-Z0-9]{6}"
+      },
+      {
+        "name": "SelfRegistration.CallbackRegex",
+        "value": "https:\\/\\/localhost:9853\\/.*"
+      },
+      {
+        "name": "_url_listPurposeSelfSignUp",
+        "value": "/carbon/consent/list-purposes.jsp?purposeGroup=SELF-SIGNUP&purposeGroupType=SYSTEM&callback=%2Fcarbon%2Fidpmgt%2Fidp-mgt-edit-local.jsp%3Fcategory%3DUser+Onboarding%26subCategory%3DSelf+Registration"
+      },
+      {
+        "name": "SelfRegistration.NotifyAccountConfirmation",
+        "value": "false"
+      },
+      {
+        "name": "SelfRegistration.ResendConfirmationReCaptcha",
+        "value": "false"
+      }
+    ]
+  },
+  {
+    "connector-name": "user-email-verification",
+    "properties": [
+      {
+        "name": "EmailVerification.Enable",
+        "value": "false"
+      },
+      {
+        "name": "EmailVerification.OTP.SendOTPInEmail",
+        "value": "false"
+      },
+      {
+        "name": "EmailVerification.OTP",
+        "value": "false"
+      },
+      {
+        "name": "EmailVerification.AskPassword.EmailOTP",
+        "value": "false"
+      },
+      {
+        "name": "EmailVerification.AskPassword.SMSOTP",
+        "value": "false"
+      },
+      {
+        "name": "EmailVerification.OTP.UseUppercaseCharactersInOTP",
+        "value": "true"
+      },
+      {
+        "name": "EmailVerification.OTP.UseLowercaseCharactersInOTP",
+        "value": "true"
+      },
+      {
+        "name": "EmailVerification.OTP.UseNumbersInOTP",
+        "value": "true"
+      },
+      {
+        "name": "EmailVerification.OTP.OTPLength",
+        "value": "6"
+      },
+      {
+        "name": "EmailVerification.LockOnCreation",
+        "value": "true"
+      },
+      {
+        "name": "EmailVerification.Notification.InternallyManage",
+        "value": "true"
+      },
+      {
+        "name": "EmailVerification.AskPassword.AccountActivation",
+        "value": "true"
+      },
+      {
+        "name": "EmailVerification.ExpiryTime",
+        "value": "1440"
+      },
+      {
+        "name": "EmailVerification.AskPassword.ExpiryTime",
+        "value": "1440"
+      },
+      {
+        "name": "EmailVerification.AskPassword.PasswordGenerator",
+        "value": "org.wso2.carbon.user.mgt.common.DefaultPasswordGenerator"
+      },
+      {
+        "name": "_url_listPurposeJITProvisioning",
+        "value": "/carbon/consent/list-purposes.jsp?purposeGroup=JIT&purposeGroupType=SYSTEM&callback=%2Fcarbon%2Fidpmgt%2Fidp-mgt-edit-local.jsp%3Fcategory%3DUser+Onboarding%26subCategory%3DAsk+Password"
+      }
+    ]
+  }
+]

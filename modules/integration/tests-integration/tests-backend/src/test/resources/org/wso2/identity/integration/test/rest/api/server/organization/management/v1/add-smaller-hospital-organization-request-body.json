@@ -1,0 +1,15 @@
+{
+  "name": "Smaller Hospital",
+  "description": "Hospital chain in South Asia",
+  "parentId": "${parentId}",
+  "attributes": [
+    {
+      "key": "Region",
+      "value": "Sri Lanka"
+    },
+    {
+      "key": "Language",
+      "value": "Sinhala"
+    }
+  ]
+}
